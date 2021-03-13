@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <title>Timer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/timer.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <div class="appName">
+        <h1>Timer</h1>
+      </div>
+    </header>
+    <main>
+      <div id="clock">
+        <div id="clockLength"></div>
+        <svg>
+          <circle class="backgroundCircle"></circle>
+          <circle class="countdownCircle"></circle>
+        </svg>
+      </div>
+      <div id="play">
+        <button id="playButton" href="#" onclick="timer()"></button>
+      </div>
+    </main>
+    <footer>
+      <div id="set-time">
+        <input type="number" min="0" max="99" value="15" step="1" id="minutes" oninput='format(this)'>
+        <input type="number" min="0" max="59" value="00" step="1" id="seconds" oninput='format(this)'>
+      </div>
+      <div id="sound-container">
+        <input type="range" id="volume" min="0" max="1" step="0.01">
+      </div>
+    </footer>
+  </div>
+  <audio src="/sources/alarm.mp3" id="sound"></audio>
+</body>
+
+</html>

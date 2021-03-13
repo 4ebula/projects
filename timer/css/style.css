@@ -1,0 +1,271 @@
+:root {
+    --sizes: 250px;
+    --hoverColor: #0dc97f;
+    --mainColor: #fe4e4d;
+    --mainColor-dehov: #9ca5b5;
+    --playMain: #9ca5b5;
+    --playMainHover: #fe4e4d;
+    --playBackground: transparent;
+    --playContent: "\f04b";
+    --playPadding: 4px;
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    font-style: normal;
+    font-weight: 200;
+    font-display: block;
+    src: url("/fonts/FontAwesome.eot");
+    src: url("/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff") format("woff"), url("/fonts/fontawesome-webfont.ttf") format("truetype"), url("/fonts/fontawesome-webfont.svg") format("svg");
+}
+
+html, body {
+    position: relative;
+    font-family: "Font Awesome";
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    flex-direction: column;
+    width: 360px;
+    height: 480px;
+    background-color: #2e364b;
+    margin: 10px;
+    z-index: -2;
+}
+
+.app div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+
+main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+.appName {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 16px;
+    color: #0dc97f;
+}
+#clock {
+    position: relative;
+    top: 9%;
+}
+
+#play {
+    position: relative;
+    top: 8%;
+}
+
+#playButton {
+    display: block;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+    border: 3px solid var(--playMain);
+    background-color: var(--playBackground);
+    border-radius: 50%;
+    text-align: center;
+}
+
+#playButton:hover {
+    background-color: #ffffff25;
+    border-color: var(--playMainHover);
+    transition: background-color 1s;
+    transition: border-color 1s;
+}
+
+#playButton::after {
+    font-family: "Font Awesome";
+    display: block;
+    padding-left: var(--playPadding);
+    content: var(--playContent);
+    font-weight: 200;
+    font-size: 17px;
+    color: var(--playMain);
+}
+
+#playButton:hover::after {
+    color: var(--playMainHover);
+    transition: color 1s;
+}
+
+button:focus {
+    outline: none;
+}
+
+#clock {
+    position: relative;
+    width: var(--sizes);
+    height: var(--sizes);
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+circle.countdownCircle {
+    r: 105;
+    cx: 125;
+    cy: 125;
+    fill: transparent;
+    /*
+    stroke: #fe4e4d;
+    */
+    stroke: var(--mainColor);
+    stroke-width: 13;
+    stroke-dasharray: none;
+    stroke-linecap: round;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dasharray 1s linear;
+}
+
+circle.backgroundCircle {
+    r: 105;
+    cx: 125;
+    cy: 125;
+    fill: transparent;
+    stroke: #9ca5b5;
+    stroke-width: 4;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+#clockLength {
+    align-self: center;
+    font-size: 64px;
+    color: var(--mainColor);
+    z-index: 2;
+}
+
+
+footer{
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10% 10% 10%;
+    box-sizing: border-box;
+}
+#set-time {
+    width: 80px;
+    height: 30px;
+}
+#set-time input{
+    width: 40px;
+    outline: none;
+    background-color: #9ca5b5;
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color:  #fe4e4d;
+}
+#set-time input:first-child{
+    border-right: 2px solid #2e364b;
+}
+#sound-container{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    bottom: 6px;
+    width: 30px;
+    height: 30px;
+}
+#sound-container:after {
+    font-family: "Font Awesome";
+    position: absolute;
+    bottom: 0px;
+    left: 16%;
+    content: "\f028";
+    font-size: 21px;
+    font-weight: 200;
+    color: var(--mainColor-dehov);
+    /*if muted f6a9 */
+}
+#sound-container:hover:after {
+    color: var(--mainColor);
+}
+input[type='range'] {
+    position: absolute;
+    display: none;
+    bottom: 65px;
+    left: -28px;
+    width: 5%;
+    z-index: 2;
+    -webkit-appearance: none;
+    appearance: none;
+    color: transparent;
+    transform: rotate(270deg);
+}
+
+input[type='range' i]:focus {
+    color: transparent;
+    border: none;
+    outline-style: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        overflow: hidden;
+        width: 80px;
+        -webkit-appearance: none;
+        background-color: #9ca5b5;
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        margin-top: -1px;
+    }
+    input[type='range']::-webkit-slider-runnable-track:focus {
+        border: none;
+        outline: none;
+    }
+    input[type='range']::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        cursor: pointer;
+        background: #fe4e4d;
+        box-shadow: -80px 0 0 80px #fe4e4d;
+    }
+}
