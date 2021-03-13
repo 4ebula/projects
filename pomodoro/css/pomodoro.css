@@ -1,0 +1,257 @@
+:root{
+    --sizes: 250px;
+    --hoverColor:#0dc97f;
+    --mainColor:#fe4e4d;
+    --mainColor-dehov:#9ca5b5;
+    --playMain: #9ca5b5;
+    --playMainHover:#fe4e4d;
+    --playBackground:transparent;
+    --playContent: "\f04b";
+    --playPadding: 4px;
+}
+@font-face {
+    font-family: "Font Awesome";
+    font-style: normal;
+    font-weight: 200;
+    font-display: block;
+    src: url("/fonts/FontAwesome.eot");
+    src: url("/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+         url("/fonts/fontawesome-webfont.woff") format("woff"), 
+         url("/fonts/fontawesome-webfont.ttf") format("truetype"), 
+         url("/fonts/fontawesome-webfont.svg") format("svg"); 
+}
+html, body{
+    position: relative;
+    font-family: "Font Awesome";
+    margin: 0;
+    padding: 0;
+    
+}
+.app{
+    flex-direction: column;
+    width: 360px;
+    height: 480px;
+    background-color: #2e364b;
+    margin: 10px;
+    z-index: -2;
+}
+/* FOR TESTING
+.bg-test{
+    background: #ffffff url('/images/main-temp_bg.png') no-repeat;
+    filter: brightness(1);
+    background-size: 360px 480px;
+    width: 360px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: -3;
+}
+*/
+.app div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+main{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu{
+    width: 15%;
+    z-index: 1;
+}
+.appName{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    z-index: 0;
+}
+h1{
+    font-size: 16px;
+    color: #0dc97f;
+}
+#menu:after{
+    font-family: "Font Awesome";
+    content: "\f0c9";
+    font-weight: 200;
+    font-size: 30px;
+    color:var(--mainColor-dehov);
+    transition: color 500ms ;
+}
+#menu:hover:after{
+    color:var(--mainColor);
+}
+#clock{
+    position: relative;
+    top: 9%;
+}
+#play{
+    position: relative;
+    top: 8%;
+}
+#playButton{
+    display: block;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+    border: 3px solid var(--playMain);
+    background-color: var(--playBackground);
+    border-radius: 50%;
+    text-align: center;
+}
+#playButton:hover{
+    background-color: #ffffff25;
+    border-color: var(--playMainHover);
+    transition: background-color 1s;
+    transition: border-color 1s;
+}
+#playButton::after{
+    font-family: "Font Awesome";
+    display: block;
+    padding-left: var(--playPadding);
+    content: var(--playContent);
+    font-weight: 200;
+    font-size: 17px;
+    color: var(--playMain);
+    
+}
+#playButton:hover::after{
+    color:var(--playMainHover);
+    transition: color 1s;
+}
+button:focus{
+    outline: none;
+}
+
+#status{
+    flex-direction: row;
+}
+#clock{
+    position: relative;
+    width: var(--sizes);
+    height: var(--sizes);
+}
+svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    
+}
+circle.countdownCircle{
+    r: 105;
+    cx: 125;
+    cy: 125;
+    fill: transparent;
+    /*
+    stroke: #fe4e4d;
+    */
+    stroke: var(--mainColor);
+    stroke-width: 13;
+    stroke-dasharray: none;
+    stroke-linecap: round;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dasharray 1s linear;
+}
+circle.backgroundCircle{
+    r: 105;
+    cx: 125;
+    cy: 125;
+    fill: transparent;
+    stroke: #9ca5b5;
+    stroke-width: 4;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    transition-duration: 0.4s;
+}
+#clockLength{
+    align-self: center;
+    font-size: 64px;
+    color: var(--mainColor);
+    z-index: 2;
+}
+#next, #sound{
+    width: 50%;
+    padding: 0;
+}
+#next:after{
+    font-family: "Font Awesome";
+    content:"\f051";
+    font-size: 19px ;
+    font-weight: 50;
+    color: var(--mainColor-dehov);
+}
+#next:hover:after{
+    color: var(--mainColor);
+}
+#sound:after{
+    font-family: "Font Awesome";
+    content:"\f028";
+    font-size: 21px ;
+    font-weight: 200;
+    color: var(--mainColor-dehov);
+    /*if muted f6a9 */
+}
+#sound:hover:after{
+    color: var(--mainColor);
+}
+footer>div{
+    width: 35%;
+}
+#cycles{
+    text-align: center;
+    font-family: "Font Awesome";
+    padding: 0;
+    font-size: 21px;
+    color: var(--mainColor-dehov);
+    align-self: center;
+}
+#reset{
+    font-family: "Font Awesome";
+    font-size: 19px;
+    color: var(--mainColor-dehov);
+    padding: 0;
+}
+#reset:hover{
+    color: var(--mainColor);
+}
+#status>div, #control>div{
+    width: 50%;
+}
+#reset, #sound, #next{
+    height: 30%;
+    width: 35%;
+}
+#reset{
+    width: 65%;
+}
+#status div,
+#control div{
+    justify-content: center;
+    align-items: center;
+}

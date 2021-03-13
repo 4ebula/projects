@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Pomodoro App</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel = "stylesheet" href="css/pomodoro.css">
+<script src="js/pomodoro.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="menu">
+      <button id="menu" ></button>
+    </div>
+    <div class="appName"><h1>Pomodoro</h1></div>
+  </header>
+  <main>
+    <div id="clock">
+      <div id="clockLength"></div>
+      <svg>
+        <circle class="backgroundCircle"></circle>
+        <circle class="countdownCircle"></circle>
+      </svg>
+    </div>
+    <!-- Slider
+    https://www.w3schools.com/howto/howto_js_rangeslider.asp
+    Menu
+    https://codepen.io/foxeisen/pen/YgEwbK
+  -->
+    <div id="play">
+      <button id="playButton" href="#" onclick="timer()"></button>
+    </div>
+  </main>
+  <footer>
+    <div id="status">
+      <div>
+        <div id="cycles">1/4</div>
+      </div>
+      <div>
+        <button id="reset">reset</button>
+      </div>
+    </div>
+    <div id="control">
+      <div>
+        <button id="next"></button>
+        <audio src="/sources/alarm.mp3"></audio>
+      </div>
+      <div>
+        <button id="sound"></button>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
