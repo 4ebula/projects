@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My movie ratings</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <!--This script is for sorting ONLY tr/td tables-->
+  <script type="text/javascript" src="js/sort.js"></script>
+  <script src="js/rating.js"></script>
+  <script src="js/parse_xls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <form enctype="multipart/form-data">
+      <input id="upload" type=file name="files[]">
+    </form>
+
+    <nav>
+        <span> Overall count:</span>
+        <span id="amount"></span>
+        
+    </nav>
+  </header>
+  <main id="main">
+  </main>
+  <!-- В заголовках всех сортрируемых таблиц нужно указать class="sort"
+кроме этого необходимо заголовок таблицы заключить в <thead>, тело в <tbody> -->
+  <div>
+    <table class="sort" align="center">
+      <thead>
+        <tr>
+          <td>Year</td>
+          <!--Имя-->
+          <td>Title</td>
+          <!--Фамилия-->
+          <td>Director</td>
+          <!--Сайт-->
+          <td>Title Type</td>
+          <!--Переключалка стилей-->
+          <td>Generes</td>
+          <!--none-->
+          <td>Your raiting</td>
+          <!--none-->
+          <td>IMDb raiting</td>
+          <!--none-->
+          <td class="runtime">Runtime (mins)</td>
+          <!--none-->
+        </tr>
+      </thead>
+
+      <tbody id="table"></tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>
