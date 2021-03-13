@@ -1,0 +1,155 @@
+html, body {
+margin:0;
+padding:0;
+width: 100%;
+}
+main{
+	width: 99%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 5px;
+	position: relative;
+	display: grid;
+	height: auto;
+	margin: 0 0.5%;
+	grid-template-rows: repeat(auto-fit, [row-start] minmax(40px, 1fr) [row-end]);
+}
+main > div{
+	display: grid;
+	grid-template-columns: 3% 35% 25% 7% 15% 5% 5% 5%;
+}
+main div p{
+	margin: 0;
+	word-wrap: normal;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 5px;
+
+	box-sizing: border-box;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+.year{
+}
+.title{
+}
+.director{
+}
+.title-type{
+}
+.genres{
+}
+.my-rating,
+.imdb-raiting{
+	justify-content: center;
+}
+.runtime{
+	justify-content: flex-end;
+}
+main div:first-child{
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background-color: tomato;
+	width: 100%;
+}
+main div:first-child p{
+	justify-content: center;
+}
+main div{
+	position: relative;
+	min-height: 25px;
+}
+/* наша HTML таблица */
+div table.sort{
+	margin:10px;
+}
+table.sort{
+	border-spacing:0.1em;
+	margin-bottom:1em;
+	margin-top:1em;
+	border-collapse:collapse;
+}
+
+/* ячейки таблицы */
+table.sort td{
+	border:1px solid #CCCCCC;
+	/*padding: 0.2em 0.3em;*/
+	padding: 5px 5px;
+}
+
+
+table.sort td:nth-child(1){
+	width:1vw;
+}
+table.sort td:nth-child(2){
+	width:45vw;
+}
+table.sort td:nth-child(3){
+	width:23vw;
+}
+table.sort td:nth-child(4){
+	width:1vw;
+	text-align:center;
+}
+table.sort td:nth-child(5){
+	width:32vw;
+}
+table.sort td:nth-child(6){
+	width:1vw;
+	text-align:center;
+}
+table.sort td:nth-child(7){
+	width:1vw;
+	text-align:center;
+}
+table.sort td:nth-child(8){
+	width:1vw;
+	text-align:center;
+}
+
+table.sort thead td:nth-child(1){
+
+}
+table.sort thead td:nth-child(2){
+
+}
+table.sort thead td:nth-child(3){
+
+}
+table.sort thead td:nth-child(4){
+
+}
+table.sort thead td:nth-child(5){
+
+}
+table.sort thead td:nth-child(6){
+	font-size:10px;
+}
+table.sort thead td:nth-child(7){
+	font-size:10px;
+}
+table.sort thead td:nth-child(8){
+	font-size:10px;
+}
+/* заголовки таблицы */
+table.sort thead td{
+	cursor:pointer;
+	cursor:hand;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* заголовок отсортированного столбца */
+table.sort thead td.curcol{
+	background-color:#999999;
+	color:#FFFFFF;
+	text-align:center;
+}
+.hide{
+opacity:0;
+}
