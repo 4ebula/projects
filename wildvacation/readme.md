@@ -1,3 +1,98 @@
 # What to do
   - [ ] make it according to layout
   - [ ] make responsive and adaptive
+
+
+## Marks from Figma
+  - [x] Header: 1128px x (60px + 1.75rem x 2)
+  - [x] Logo 183px x 50px
+  - [ ] `h1`: Исследуй 582px x 105px
+        ? margin: 241 707 686 151 abs
+  - [ ] Typo
+    - [ ] nav (18px, 400, 32px) #fff
+    - [ ] Direction card
+      - [ ] Prices line
+        - [ ] $ (13px, 500, 32px) #1b1e22
+          &:hover (24px, 700, 32px)
+        - [ ] (13px, 500, 16px)    
+      - &:hover change only to #333
+    - [ ] Lang Typo (13px, 500, 16px) .5 #c4c4c4 _or_ #fff
+    - [ ] Buttons (20px, 500, 24px) #fff
+      &:hover -||- #000
+    - [ ] Feedback: name (16px, 600, 16px) #ffb800
+    - [ ] Footer (13px, 400, 16px) #ffb800 / #fff
+    - [ ] Like and button text onclick delete class opacity
+  - [ ] On muted Lang color is #fff on hover. Keep it that way
+  - [ ] nav border radius
+  - [ ] nav button - make after everything stops to expand > 576px
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
