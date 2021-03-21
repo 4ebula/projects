@@ -487,7 +487,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2.125rem;
+  line-height: 2.325rem;
   color: #fff;
 }
 
@@ -586,8 +586,11 @@ a:hover {
 }
 
 header .container {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+header .row {
+  height: 79px;
 }
 
 .banner header h2 {
@@ -603,9 +606,9 @@ header .container {
   /* THIS IS CRUTCH FOR LATER DEL */
   height: 1032px;
   /********************************/
-  background-color: #23282f;
+  background-color: #1b1e22;
   background-image: url("../assets/background_1.jpg");
-  background-image: linear-gradient(180deg, #ffffff08 2.5%, #1b1e2266 42.42%, #1B1E22 80.67%), url("../images/background_1.jpg");
+  background-image: linear-gradient(180deg, #ffffff08 2.5%, #1b1e2266 42.42%, #1B1E22 80.67%), url("../assets/background_1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -613,6 +616,8 @@ header .container {
 }
 
 .logo {
+  align-self: flex-start;
+  margin-top: 3px;
   height: 50px;
   max-width: 183px;
 }
@@ -689,4 +694,31 @@ header .container {
   text-align: center;
   background-color: #343a40c7;
   border: 1px solid #2a343e;
+}
+
+.main {
+  margin-top: 80px;
+}
+.main .row > div {
+  padding: 0;
+}
+.main h1 {
+  margin-top: 2rem;
+  margin-left: -5px;
+}
+.main h3 {
+  margin-left: -1px;
+  margin-top: 26px;
+  width: 480px;
+}
+
+.quick-search {
+  width: 500px;
+  height: 360px;
+  right: -84px;
+  border-radius: 10px;
+  background: rgba(51, 51, 51, 0.25);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
 }

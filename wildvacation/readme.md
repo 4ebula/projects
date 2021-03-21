@@ -9,7 +9,7 @@
   - [ ] `h1`: Исследуй 582px x 105px
         ? margin: 241 707 686 151 abs
   - [ ] Typo
-    - [ ] nav (18px, 400, 32px) #fff
+    - [x] nav (18px, 400, 32px) #fff
     - [ ] Direction card
       - [ ] Prices line
         - [ ] $ (13px, 500, 32px) #1b1e22
@@ -26,8 +26,8 @@
   - [ ] nav border radius
   - [ ] nav button - make after everything stops to expand > 576px
   - [ ] 
-  - [ ] 
-  - [ ] 
+  - [ ] nav elements are wider than needed
+  - [ ] search 500 * 360 px
   - [ ] 
   - [ ] 
   - [ ] 
