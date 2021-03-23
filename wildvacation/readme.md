@@ -27,7 +27,6 @@
   - [ ] nav button - make after everything stops to expand > 576px
   - [ ] 
   - [ ] nav elements are wider than needed
-  - [ ] search 500 * 360 px
   - [ ] 
   - [ ] 
   - [ ] 
