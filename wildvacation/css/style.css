@@ -1,143 +1,4 @@
 @charset "UTF-8";
-.icons > i {
-  font-size: 55px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-.icons > p {
-  text-align: center;
-}
-
-#directions .row > div > div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #41484f;
-  border-radius: 10px;
-  height: 450px;
-}
-
-#directions .row > div > div > span {
-  position: relative;
-  height: 25px;
-}
-
-#directions .row > div > div > span a {
-  color: #a5a5a5;
-  font-size: 0.8rem;
-}
-
-#directions .row > div > div > div + div {
-  position: relative;
-  height: 180px;
-  overflow-y: hidden;
-}
-
-.line-1 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-5 {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-#directions .row > div > div:hover {
-  transform: scale(1.02);
-  background-color: #ffffff;
-}
-
-#directions .row > div > div:hover h4,
-#directions .row > div > div:hover p {
-  color: #41484f;
-}
-
-#directions .row > div > div:hover span a {
-  color: #a5a5a5;
-}
-
-.dir-image-part {
-  position: relative;
-}
-
-.dir-image-part > div {
-  display: flex;
-}
-
-.dir-image-part > div span {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.dir-image-part > div span:first-child {
-  background-color: orange;
-  color: #343a40;
-}
-
-.dir-image-part > div span:last-child {
-  background-color: #343a40c7;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
-.blog-image-part {
-  position: relative;
-  height: 180px;
-}
-
-.blog-image-part > div {
-  display: flex;
-}
-
-#directions img {
-  width: 100%;
-  overflow: hidden;
-  height: 250px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#directions img + div {
-  position: absolute;
-  bottom: 10%;
-}
-
-.watch-all {
-  color: #fff;
-}
-
-.watch-all:hover {
-  color: #343a40;
-}
-
 #info {
   text-align: center;
   background-color: #343a40;
@@ -355,14 +216,15 @@ footer .row > div:last-child a {
 *    OLD STUFF
 **/
 /**********************
-****** VARIABLES ******
-***********************/
+ ****** VARIABLES ******
+ ***********************/
 /* MIXINS */
 /**********************
-**** GLOBAL STYLES ****
-***********************/
+ **** GLOBAL STYLES ****
+ ***********************/
 html,
 body {
+  background-color: #1b1e22;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   /* This is to prevent scroll from taking space */
@@ -453,8 +315,8 @@ a:hover {
 }
 
 /***********************
-**** GLOBAL BUTTONS ****
-************************/
+ **** GLOBAL BUTTONS ****
+ ************************/
 .btn-fill {
   background-color: #ffb800;
 }
@@ -474,8 +336,8 @@ a:hover {
   }
 }
 /***************
-**** HEADER ****
-****************/
+ **** HEADER ****
+ ****************/
 #lang {
   flex-direction: column;
   justify-content: space-evenly;
@@ -742,41 +604,221 @@ header .row {
 
 .features {
   margin-top: 280px;
+  height: 227px;
 }
 .features .row {
-  height: 178.5px;
+  justify-content: space-between;
 }
-.features .row > div {
+
+.features-card {
+  margin-top: 131.4px;
+  width: 264px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
-.features .row > div h5 {
+.features-card h5 {
   text-align: center;
 }
-.features .row > div::before {
+.features-card::before {
   content: "";
   position: absolute;
-  top: 42px;
+  top: -90px;
   left: 97px;
   width: 75px;
   height: 75px;
   background-repeat: no-repeat;
 }
-.features .row > div:nth-child(1)::before {
+.features-card:nth-child(2) h5 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.features-card:nth-child(1)::before {
   background-image: url("../assets/visa.svg");
 }
-.features .row > div:nth-child(2)::before {
+.features-card:nth-child(2)::before {
   content: "";
   background-image: url("../assets/world.svg");
 }
-.features .row > div:nth-child(3)::before {
+.features-card:nth-child(3)::before {
   content: "";
   background-image: url("../assets/hunter.svg");
 }
-.features .row > div:nth-child(4)::before {
+.features-card:nth-child(4)::before {
   content: "";
   background-image: url("../assets/bbq.svg");
+}
+
+.directions {
+  margin-top: 3.875rem;
+}
+.directions .row {
+  margin-top: 2.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.directions-card {
+  position: relative;
+  width: 360px;
+  height: 432px;
+  margin-bottom: 2.8rem;
+  padding: 0;
+}
+
+.directions-card-image {
+  position: relative;
+  height: 100%;
+}
+.directions-card-image div {
+  position: absolute;
+  top: 39%;
+}
+.directions-card-image:hover {
+  transform: scale(1.06);
+}
+
+.directions-card-text {
+  position: absolute;
+  height: 50%;
+  bottom: -1rem;
+  left: 1.25rem;
+}
+.directions-card-text h5 {
+  padding-right: 3.5rem;
+}
+.directions-card-text p {
+  margin-top: 0.9rem;
+  padding-right: 3rem;
+}
+
+#directions .row > div > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #41484f;
+  border-radius: 10px;
+  height: 450px;
+}
+
+#directions .row > div > div > span {
+  position: relative;
+  height: 25px;
+}
+
+#directions .row > div > div > span a {
+  color: #a5a5a5;
+  font-size: 0.8rem;
+}
+
+#directions .row > div > div > div + div {
+  position: relative;
+  height: 180px;
+  overflow-y: hidden;
+}
+
+.line-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#directions .row > div > div:hover {
+  transform: scale(1.02);
+  background-color: #ffffff;
+}
+
+#directions .row > div > div:hover h4,
+#directions .row > div > div:hover p {
+  color: #41484f;
+}
+
+#directions .row > div > div:hover span a {
+  color: #a5a5a5;
+}
+
+.dir-image-part {
+  position: relative;
+}
+
+.dir-image-part > div {
+  display: flex;
+}
+
+.dir-image-part > div span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dir-image-part > div span:first-child {
+  background-color: orange;
+  color: #343a40;
+}
+
+.dir-image-part > div span:last-child {
+  background-color: #343a40c7;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.blog-image-part {
+  position: relative;
+  height: 180px;
+}
+
+.blog-image-part > div {
+  display: flex;
+}
+
+#directions img {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#directions img + div {
+  position: absolute;
+  bottom: 10%;
+}
+
+.watch-all {
+  color: #fff;
+}
+
+.watch-all:hover {
+  color: #343a40;
 }

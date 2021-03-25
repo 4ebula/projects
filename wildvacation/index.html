@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
   <title>Wild Vacation</title>
 </head>
 
-<body class="text-white bg-dark">
+<body class="text-white">
 
   <div class="banner banner-wrapper">
     <header>
@@ -71,35 +72,35 @@
           </div>
           <div class="col-xl-6 col-12 col-md-5">
             <div class="form-blured"></div>
-            <div class="quick-search"> 
-            <h5>Быстрый поиск тура</h5>
-            <form class="form" action="" method="post">
-              <div class="input-group">
-                <input type="search" class="form-control" id="search-place" placeholder="Куда">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-secondary search-button" id="search-button" type="button"></button>
+            <div class="quick-search">
+              <h5>Быстрый поиск тура</h5>
+              <form class="form" action="" method="post">
+                <div class="input-group">
+                  <input type="search" class="form-control" id="search-place" placeholder="Куда">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-button" id="search-button" type="button"></button>
+                  </div>
                 </div>
-              </div>
-              <div class="input-group">
-                <input type="date" id="date" class="form-control" placeholder="Когда">
-              </div>
-              <div class="input-group">
-                <input type="text" id="duration" class="form-control" placeholder="Продолжительность">
-              </div>
-              <div class="input-group">
-                <select class="form-control">
-                  <option value="" selected disabled hidden>Тип тура</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="input-group">
-                <button type="submit" class="btn btn-block btn-submit" name="sendMessage">Найти</button>
-              </div>
-            </form>
+                <div class="input-group">
+                  <input type="date" id="date" class="form-control" placeholder="Когда">
+                </div>
+                <div class="input-group">
+                  <input type="text" id="duration" class="form-control" placeholder="Продолжительность">
+                </div>
+                <div class="input-group">
+                  <select class="form-control">
+                    <option value="" selected disabled hidden>Тип тура</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <button type="submit" class="btn btn-block btn-submit" name="sendMessage">Найти</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -110,322 +111,310 @@
       <div class="container">
         <h2 class="text-center">Почему именно мы</h2>
         <div class="row">
-          <div class="col feature-icons">
+          <div class="features-card">
             <h5>Визовая поддержка клиентов</h5>
           </div>
-          <div class="col feature-icons">
+          <div class="features-card">
             <h5>Направления по всему миру</h5>
           </div>
-          <div class="col feature-icons">
+          <div class="features-card">
             <h5>Сопровождение опытными гидами</h5>
           </div>
-          <div class="col feature-icons">
+          <div class="features-card">
             <h5>Полное обеспечение снаряжением</h5>
           </div>
         </div>
       </div>
     </section>
 
-
-
-
-
-  <section id="directions">
-    <div class="container">
-      <h2 class="text-center mb-3">Актуальные направления</h2>
-      <div class="row">
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_1.jpg" alt="direction_1">
+    <article class="directions">
+      <div class="container">
+        <h2 class="text-center">Актуальные направления</h2>
+        <div class="row">
+          <div class="directions-card">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-01.png" alt="direction_01">
               <div>
                 <span>от <strong>460$</strong></span>
                 <span>26 октября 2018, 7 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem</h5>
-              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-                quasi.</p>
+            <div class="directions-card-text">
+              <h5>Кемпинг в Хардангере – сердце Региона фьордов</h5>
+              <p>Одно из лучших мест отдыха находится в районе
+                Хардангера, у туристов есть возможность ежедневно любоваться дикой природой
+                севера.</p>
+              <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
             </div>
-            <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
           </div>
-        </div>
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_2.jpg" alt="direction_2">
+          <div class="directions-card">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-02.png" alt="direction_02">
               <div>
                 <span>от <strong>520$</strong></span>
                 <span>11 ноября 2018, 5 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-              <p class="ml-2 mr-2 mb-0 line-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe atque ad,
-                reiciendis commodi mollitia, consequuntur eum accusantium repudiandae praesentium aliquam veniam magnam
-                veritatis aperiam temporibus excepturi! Nostrum saepe odit dolore ipsam autem, repudiandae eum
-                voluptates aperiam quas in? Qui praesentium quidem voluptate ipsa eaque necessitatibus dolores ipsum.
-                Sit quaerat quod cupiditate fugit quos amet praesentium veritatis.</p>
+            <div class="directions-card-text">
+              <h5>Треккинг по Согне-фьорд с восхождением на Гальхёпигген</h5>
+              <p>Уникальный поход совмещенный с путешествием по самому
+                большому и красивому фьорду – Согне-фьорд.</p>
+              <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
             </div>
-            <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
           </div>
-        </div>
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_3.jpg" alt="direction_3">
+          <div class="directions-card ">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-03.png" alt="direction_03">
               <div>
                 <span>от <strong>440$</strong></span>
                 <span>12 ноября 2018, 5 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae aliquam atque
-                cum quos laborum ipsa?</h5>
-              <p class="ml-2 mr-2 mb-0 line-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi
-                vero excepturi, dolor ullam facere sunt ipsam labore. Ipsa, ullam vel. Possimus voluptates quis enim,
-                eligendi totam eaque placeat libero reiciendis iste fugit eveniet fuga corporis ducimus iusto unde et!
-              </p>
+            <div class="directions-card-text">
+              <h5>Восхождение на гору Ушба в регионе Сванети</h5>
+              <p>Одна из самых знаменитых гор Кавказа. Расположена она в регионе Сванети.
+                Со сванского языка "уш" означает беда, "ба" — гору. То есть гора, приносящая несчастье.</p>
+              <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
             </div>
-            <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
           </div>
-        </div>
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_4.jpg" alt="direction_4">
+          <div class="directions-card">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-04.png" alt="direction_04">
               <div>
                 <span>от <strong>1780$</strong></span>
                 <span>07 мая 2019, 5 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem ipsum dolor sit amet.</h5>
-              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur,
-                ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos.
-                Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            <div class="directions-card-text">
+              <h5>Каякинг на каноэ по озеру Сайма в Финляндии</h5>
+              <p>Водный поход с элементами ориентирования и необычными природными объектами.
+                Неделя настоящего отдыха для тех, кто любит путешествовать</p>
+              <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
             </div>
-            <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
           </div>
-        </div>
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_5.jpg" alt="direction_5">
+          <div class="directions-card">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-05.png" alt="direction_05">
               <div>
                 <span>от <strong>20$</strong></span>
                 <span>09 мая 2019, 18 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem ipsum dolor sit amet.</h5>
-              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur,
-                ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos.
-                Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            <div class="directions-card-text">
+              <h5>Треккинг к Языку Тролля — Фьорд Sørfjorden, Норвегия</h5>
+              <p>Язык Тролля - без преувеличения самое известное и культовое место в Норвегии.
+                К нему не доехать на машине. Сюда могут попасть только те, кто</p>
+              <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
             </div>
-            <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
           </div>
-        </div>
-        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
-          <div>
-            <div class="dir-image-part">
-              <img src="images/dir_6.jpg" alt="direction_6">
+          <div class="directions-card">
+            
+            <div class="directions-card-image">
+              <img src="assets/direction-06.png" alt="direction_06">
               <div>
                 <span>от <strong>120$</strong></span>
                 <span>24 июня 2020, 5 дней</span>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              <h5 class="ml-2 mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi incidunt neque
-                suscipit.</h5>
-              <p class="ml-2 mr-2 mb-0 line-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur,
-                ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos.
-                Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            <div class="directions-card-text">
+              <h5>Поход по Исландии - Лаугавегур - Ландманалуга</h5>
+              <p>За 9 ходовых дней (из них 2 дня – радиальные выходы) пройдем ~ 135 км по горам,
+                лавовым полям, разноцветным холмам и другим исландским природным чудесам</p>
             </div>
             <span class="ml-2"><a class="small opacity" href="#">Подробнее</a></span>
+            
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-outline-warning watch-all" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </article>
+
+    <section id=info>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-giant">9</p>
+            <h5>Лет работы</h5>
+          </div>
+          <div class="col">
+            <p class="text-giant">62,500</p>
+            <h5>Довольных клиентов</h5>
+          </div>
+          <div class="col">
+            <p class="text-giant">112</p>
+            <h5>Захватывающих туров</h5>
+          </div>
+          <div class="col">
+            <p class="text-giant">23</p>
+            <h5>Офиса в Беларуси</h5>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <a class="btn btn-outline-warning watch-all" href="#">Смотреть все</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id=info>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p class="text-giant">9</p>
-          <h5>Лет работы</h5>
-        </div>
-        <div class="col">
-          <p class="text-giant">62,500</p>
-          <h5>Довольных клиентов</h5>
-        </div>
-        <div class="col">
-          <p class="text-giant">112</p>
-          <h5>Захватывающих туров</h5>
-        </div>
-        <div class="col">
-          <p class="text-giant">23</p>
-          <h5>Офиса в Беларуси</h5>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog">
-    <div class="container">
-      <h2 class="text-center mb-3">Наш блог</h2>
-      <div class="row">
-        <div class="col-md-6 pb-3">
-          <div>
-            <img src="images/blog_1.jpg" alt="blog_1">
-            <div class="abs-pos">
-              <h2 class="h-100">10 мест на Земле, который должен посетить каждый</h2>
-              <p class="small">20 октября 2018</p>
+    <section id="blog">
+      <div class="container">
+        <h2 class="text-center mb-3">Наш блог</h2>
+        <div class="row">
+          <div class="col-md-6 pb-3">
+            <div>
+              <img src="images/blog_1.jpg" alt="blog_1">
+              <div class="abs-pos">
+                <h2 class="h-100">10 мест на Земле, которые обязательно должен посетить каждый</h2>
+                <p class="small">20 октября 2018</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 pb-3">
-          <div>
-            <div class="blog-image-part">
-              <img src="images/blog_2.jpg" alt="blog_2">
+          <div class="col-md-3 pb-3">
+            <div>
+              <div class="blog-image-part">
+                <img src="images/blog_2.jpg" alt="blog_2">
+              </div>
+              <h5 class="ml-2 mt-1">Как стать успешным тревел-блогером</h5>
+              <p class="ml-2">Блоги о путешествиях - это актуальное пространство, и каждый день оно становится более
+                переполненным.
+                И многие советы, которые могут помочь</p>
+              <div class="ml-2 footnote">
+                <p class="small opacity">28 октября 2018</p>
+                <a href="#" class="comment opacity">208</a>
+                <div class="like">
+                  <a class="fas fa-heart opacity" onclick="like(this)"></a>
+                  <span>21</span>
+                </div>
+              </div>
             </div>
-            <h5 class="ml-2 mt-1">Как стать успешным тревел-блогером</h5>
-            <p class="ml-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, ut, laborum velit
-              perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos. Sapiente at quaerat
-              consectetur fugiat, atque officia.</p>
-            <div class="ml-2 footnote">
-              <p class="small opacity">28 октября 2018</p>
-              <a href="#" class="comment opacity">208</a>
-              <div class="like">
-                <a class="fas fa-heart opacity" onclick="like(this)"></a>
-                <span>21</span>
+          </div>
+          <div class="col-md-3 pb-3">
+            <div>
+              <div class="blog-image-part">
+                <img src="images/blog_3.jpg" alt="blog_3">
+              </div>
+              <h5 class="ml-2 mt-1">Лайфхаки успешного путешествия по Норвегии</h5>
+              <p class="ml-2">Норвегия — пожалуй, лучшая страна для приключенчес- кого туризма в Европе.
+                Здесь есть все: горы для альпинистов, девушки для мужиков</p>
+              <div class="ml-2 footnote">
+                <p class="small">12 декабря 2018</p>
+                <a href="#" class="comment">142</a>
+                <div class="like">
+                  <a class="fas fa-heart" onclick="like(this)"></a>
+                  <span>24</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 pb-3">
-          <div>
-            <div class="blog-image-part">
-              <img src="images/blog_3.jpg" alt="blog_3">
+        <div class="d-flex justify-content-center mt-3">
+          <a class="btn btn-outline-warning watch-all" href="">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="text-center mb-3">Отзывы наших клиентов</h2>
+
+        <div id="carousel" class="carousel slide d-flex flex-column" data-ride="carousel">
+          <div class="carousel-inner h-95">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, amet velit? Sit voluptatem,
+                  suscipit atque autem reprehenderit, impedit mollitia accusantium, ex odio natus aut. Explicabo!</h4>
+                <p class="text-orange">Alice</p>
+              </div>
             </div>
-            <h5 class="ml-2 mt-1">Лайфхаки успешного путешествия по Норвегии</h5>
-            <p class="ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, perferendis.</p>
-            <div class="ml-2 footnote">
-              <p class="small">12 декабря 2018</p>
-              <a href="#" class="comment">142</a>
-              <div class="like">
-                <a class="fas fa-heart" onclick="like(this)"></a>
-                <span>24</span>
+            <div class="carousel-item">
+
+              <div class="carousel-caption d-flex flex-column">
+                <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+                <h4 class="clampjs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, repellendus.
+                </h4>
+                <p class="text-orange">Bob</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora, placeat sint et rerum facere
+                  corrupti mollitia nam nesciunt vero praesentium nulla suscipit impedit laborum doloremque, illum minus
+                  quam voluptates distinctio. Expedita, placeat.</h4>
+                <p class="text-orange">Charlie</p>
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators h-5">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div>
+              <p class="small d-inline text-orange">E-mail</p>
+              <a href="mailto:wildvacation@gmail.com">wildvacation@gmail.com</a>
+            </div>
+            <div>
+              <p class="small d-inline text-orange">Адрес</p>
+              <p class="small d-inline">Немига 5а, офис 18, Минск</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="d-flex">
+              <div>
+                <p class="small text-orange">Телефоны</p>
+              </div>
+              <div>
+                <p class="small">+375 33 888-44-22<br>
+                  +375 29 963-85-21</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div>
+              <p class="small text-orange">Мы в соцсетях</p>
+              <div>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-vk"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-facebook"></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center mt-3">
-        <a class="btn btn-outline-warning watch-all" href="">Смотреть все</a>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <section>
-    <div class="container">
-      <h2 class="text-center mb-3">Отзывы наших клиентов</h2>
-
-      <div id="carousel" class="carousel slide d-flex flex-column" data-ride="carousel">
-        <div class="carousel-inner h-95">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
-              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, amet velit? Sit voluptatem,
-                suscipit atque autem reprehenderit, impedit mollitia accusantium, ex odio natus aut. Explicabo!</h4>
-              <p class="text-orange">Alice</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <div class="carousel-caption d-flex flex-column">
-              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
-              <h4 class="clampjs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, repellendus.
-              </h4>
-              <p class="text-orange">Bob</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora, placeat sint et rerum facere
-                corrupti mollitia nam nesciunt vero praesentium nulla suscipit impedit laborum doloremque, illum minus
-                quam voluptates distinctio. Expedita, placeat.</h4>
-              <p class="text-orange">Charlie</p>
-            </div>
-          </div>
-        </div>
-        <ol class="carousel-indicators h-5">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-      </div>
-
-    </div>
-
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div>
-            <p class="small d-inline text-orange">E-mail</p>
-            <a href="mailto:wildvacation@gmail.com">wildvacation@gmail.com</a>
-          </div>
-          <div>
-            <p class="small d-inline text-orange">Адрес</p>
-            <p class="small d-inline">Немига 5а, офис 18, Минск</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-5">
-          <div class="d-flex">
-            <div>
-              <p class="small text-orange">Телефоны</p>
-            </div>
-            <div>
-              <p class="small">+375 33 888-44-22<br>
-                +375 29 963-85-21</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div>
-            <p class="small text-orange">Мы в соцсетях</p>
-            <div>
-              <a href="#" class="fab fa-instagram"></a>
-              <a href="#" class="fab fa-vk"></a>
-              <a href="#" class="fab fa-twitter"></a>
-              <a href="#" class="fab fa-facebook"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    function like(x) {
-      if (x.style.color != "orange") {
-        x.style.color = "orange";
-        let y = x.parentElement.querySelector('span');
-        y.innerHTML = +y.innerHTML + 1;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function like(x) {
+        if (x.style.color != "orange") {
+          x.style.color = "orange";
+          let y = x.parentElement.querySelector('span');
+          y.innerHTML = +y.innerHTML + 1;
+        }
       }
-    }
-  </script>
+    </script>
 </body>
 
 </html>
