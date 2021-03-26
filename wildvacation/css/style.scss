@@ -220,8 +220,8 @@ footer .row>div:last-child a {
 /**********************
  ****** VARIABLES ******
  ***********************/
-$bg-main0: #23282f;
 $bg-main: #1b1e22;
+$bg-second: #23282f;
 $font-main: #fff;
 $font-second: #ffb800;
 $font-dark: #000;
@@ -270,6 +270,12 @@ h5 {
 
 p {
   @include fonts(14px, 400, 20px);
+}
+
+strong {
+  @include fonts(21px, 900, 32px);
+  letter-spacing: -1px;
+  color: $font-price;
 }
 
 .small {
@@ -698,153 +704,70 @@ header {
   position: relative;
   width: 360px;
   height: 432px;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.5rem;
   padding: 0;
-  
+
 }
-.directions-card-image{
+
+.directions-card-image {
   position: relative;
   height: 100%;
-  div{
+  background-color: $bg-second;
+
+  div {
     position: absolute;
-    top: 39%;
+    top: 37%;
   }
-  &:hover{
+
+  &:hover {
     transform: scale(1.06);
   }
 }
-.directions-card-text{
-  position: absolute;
-  height: 50%;
-  bottom: -1rem;
-  left: 1.25rem;
 
-  h5{
-    padding-right: 3.5rem;
-  }
-  p{
-    margin-top: .9rem;
-    padding-right: 3rem;
-  }
-}
-#directions .row>div>div {
-  position: relative;
+.directions-card-text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.25rem;
+  height: 11.125rem;
   display: flex;
   flex-direction: column;
-  background-color: #41484f;
-  border-radius: 10px;
-  height: 450px;
+  justify-content: space-between;
+
+  h5 {
+    padding-right: 3.5rem;
+    max-height: 50%;
+  }
+
+  p {
+    padding-right: 3rem;
+    max-height: 50%;
+  }
 }
 
-#directions .row>div>div>span {
-  position: relative;
-  height: 25px;
-}
-
-#directions .row>div>div>span a {
-  color: #a5a5a5;
-  font-size: .8rem;
-}
-
-#directions .row>div>div>div+div {
-  position: relative;
-  height: 180px;
-  overflow-y: hidden;
-}
-
-.line-1 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-5 {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-#directions .row>div>div:hover {
-  transform: scale(1.02);
-  background-color: #ffffff;
-}
-
-#directions .row>div>div:hover h4,
-#directions .row>div>div:hover p {
-  color: #41484f;
-}
-
-#directions .row>div>div:hover span a {
-  color: #a5a5a5;
-}
-
-.dir-image-part {
-  position: relative;
-}
-
-.dir-image-part>div {
+.direction-card-pricing {
+  width: 248px;
+  height: 32px;
   display: flex;
-}
+  background-color: $bg-main;
 
-.dir-image-part>div span {
-  padding-left: 5px;
-  padding-right: 5px;
-}
+  span {
+    height: 100%;
+    display: block;
+    text-align: center;
+    
+    &:first-child {
+      width: 78px;
+      @include fonts(13px, 500, 32px);
+      color: $font-price;
+      background-color: $font-second;
+    }
 
-.dir-image-part>div span:first-child {
-  background-color: orange;
-  color: #343a40;
-}
-
-.dir-image-part>div span:last-child {
-  background-color: #343a40c7;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
-.blog-image-part {
-  position: relative;
-  height: 180px;
-}
-
-.blog-image-part>div {
-  display: flex;
-}
-
-#directions img {
-  width: 100%;
-  overflow: hidden;
-  height: 250px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#directions img+div {
-  position: absolute;
-  bottom: 10%;
+    &:last-child {
+      width: 170px;
+      @include fonts(13px, 500, 32px);
+      color: $font-main;
+    }
+  }
 }
 
 .watch-all {

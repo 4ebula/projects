@@ -279,6 +279,16 @@ p {
   color: #fff;
 }
 
+strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 900;
+  line-height: 2rem;
+  color: #fff;
+  letter-spacing: -1px;
+  color: #1b1e22;
+}
+
 .small {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8125rem;
@@ -665,17 +675,18 @@ header .row {
   position: relative;
   width: 360px;
   height: 432px;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.5rem;
   padding: 0;
 }
 
 .directions-card-image {
   position: relative;
   height: 100%;
+  background-color: #23282f;
 }
 .directions-card-image div {
   position: absolute;
-  top: 39%;
+  top: 37%;
 }
 .directions-card-image:hover {
   transform: scale(1.06);
@@ -683,136 +694,51 @@ header .row {
 
 .directions-card-text {
   position: absolute;
-  height: 50%;
-  bottom: -1rem;
+  bottom: 1.5rem;
   left: 1.25rem;
+  height: 11.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .directions-card-text h5 {
   padding-right: 3.5rem;
+  max-height: 50%;
 }
 .directions-card-text p {
-  margin-top: 0.9rem;
   padding-right: 3rem;
+  max-height: 50%;
 }
 
-#directions .row > div > div {
-  position: relative;
+.direction-card-pricing {
+  width: 248px;
+  height: 32px;
   display: flex;
-  flex-direction: column;
-  background-color: #41484f;
-  border-radius: 10px;
-  height: 450px;
+  background-color: #1b1e22;
 }
-
-#directions .row > div > div > span {
-  position: relative;
-  height: 25px;
+.direction-card-pricing span {
+  height: 100%;
+  display: block;
+  text-align: center;
 }
-
-#directions .row > div > div > span a {
-  color: #a5a5a5;
-  font-size: 0.8rem;
+.direction-card-pricing span:first-child {
+  width: 78px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #fff;
+  color: #1b1e22;
+  background-color: #ffb800;
 }
-
-#directions .row > div > div > div + div {
-  position: relative;
-  height: 180px;
-  overflow-y: hidden;
-}
-
-.line-1 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-5 {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-#directions .row > div > div:hover {
-  transform: scale(1.02);
-  background-color: #ffffff;
-}
-
-#directions .row > div > div:hover h4,
-#directions .row > div > div:hover p {
-  color: #41484f;
-}
-
-#directions .row > div > div:hover span a {
-  color: #a5a5a5;
-}
-
-.dir-image-part {
-  position: relative;
-}
-
-.dir-image-part > div {
-  display: flex;
-}
-
-.dir-image-part > div span {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.dir-image-part > div span:first-child {
-  background-color: orange;
-  color: #343a40;
-}
-
-.dir-image-part > div span:last-child {
-  background-color: #343a40c7;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
-.blog-image-part {
-  position: relative;
-  height: 180px;
-}
-
-.blog-image-part > div {
-  display: flex;
-}
-
-#directions img {
-  width: 100%;
-  overflow: hidden;
-  height: 250px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#directions img + div {
-  position: absolute;
-  bottom: 10%;
+.direction-card-pricing span:last-child {
+  width: 170px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #fff;
+  color: #fff;
 }
 
 .watch-all {
