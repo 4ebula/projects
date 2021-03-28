@@ -1,2 +1,5 @@
 # Prepros configuration
 prepros.config
+
+#Logs
+log
