@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Wild Vacation</title>
+</head>
+<body class="text-white bg-dark">
+
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand d-block pb-0 mb-0" href="#">
+            <img src="images/logo.png" alt="Wild Vacation">
+          </a>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="text-muted mr-1 ml-1 curr">Рус</a>
+            <a href="#" class="text-muted mr-1 ml-1">Eng</a>
+          </div>
+          <div>
+            <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">О нас<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Туры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Визы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Агентам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Помощь</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+
+  <div id="background"></div>
+
+  <section>
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+          <h1 class="pr-5 font-weight-normal">Исследуйте мир вместе с нами</h1>
+          <p class="lead pr-5 mt-3">Брось себе вызов. Отправься в путешествия в дикие уголки природы.</p>
+        </div>
+        <div class="col-12 col-md-5">
+          <div id="form" class="jumbotron">
+            <h5 class="mb-3">Быстрый поиск тура</h5>
+            <form class="form" action="" method="post">
+              <div class="input-group mb-3">
+                <input type="search" class="form-control" id="search-place" placeholder="Куда">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary search-button" id="search-button" type="button"></button>
+                </div>
+              </div>
+              <div class="input-group mb-3 d-flex flex-row justify-content-between">
+                <div class="">
+                  <input type="date" id="from-date" class="form-control" placeholder="Когда">
+                </div>
+                <div>
+                  <input type="date" id="to-date" class="form-control" placeholder="Продолжительность">
+                </div>
+              </div>
+              <div class="mb-3">
+                <select class="form-control" id="trip-type">
+                  <option value="" selected disabled hidden>Тип тура</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-block btn-primary orange" name="sendMessage">Найти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h3 class="text-center mb-3">Почему именно мы</h3>
+      <div class="row">
+        <div class="icons col"><i class="fa fa-id-card"></i><p>Визовая поддержка клиентов</p></div>
+        <div class="icons col"><i class="fa fa-globe-africa"></i><p>Направления по всему миру</p></div>
+        <div class="icons col"><i class="fa fa-route"></i><p>Сопровождение опытными гидами</p></div>
+        <div class="icons col"><i class="fas fa-hiking"></i><p>Полное обеспечение снаряжением</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="directions">
+    <div class="container">
+      <h3 class="text-center mb-3">Актуальные направления</h3>
+      <div class="row">
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_1.jpg" alt="direction_1">
+              <div>
+                <span>от <strong>460$</strong></span>
+                <span>26 октября 2018, 7 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem</h4>
+              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quasi.</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_2.jpg" alt="direction_2">
+              <div>
+                <span>от <strong>520$</strong></span>
+                <span>11 ноября 2018, 5 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+              <p class="ml-2 mr-2 mb-0 line-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe atque ad, reiciendis commodi mollitia, consequuntur eum accusantium repudiandae praesentium aliquam veniam magnam veritatis aperiam temporibus excepturi! Nostrum saepe odit dolore ipsam autem, repudiandae eum voluptates aperiam quas in? Qui praesentium quidem voluptate ipsa eaque necessitatibus dolores ipsum. Sit quaerat quod cupiditate fugit quos amet praesentium veritatis.</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_3.jpg" alt="direction_3">
+              <div>
+                <span>от <strong>440$</strong></span>
+                <span>12 ноября 2018, 5 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae aliquam atque cum quos laborum ipsa?</h4>
+              <p class="ml-2 mr-2 mb-0 line-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi vero excepturi, dolor ullam facere sunt ipsam labore. Ipsa, ullam vel. Possimus voluptates quis enim, eligendi totam eaque placeat libero reiciendis iste fugit eveniet fuga corporis ducimus iusto unde et!</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_4.jpg" alt="direction_4">
+              <div>
+                <span>от <strong>1780$</strong></span>
+                <span>07 мая 2019, 5 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem ipsum dolor sit amet.</h4>
+              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos. Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_5.jpg" alt="direction_5">
+              <div>
+                <span>от <strong>20$</strong></span>
+                <span>09 мая 2019, 18 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem ipsum dolor sit amet.</h4>
+              <p class="ml-2 mr-2 mb-0 line-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos. Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+        <div class="directions col-sm-6 col-md-4 pb-3 pt-3">
+          <div>
+            <div class="dir-image-part">
+              <img src="images/dir_6.jpg" alt="direction_6">
+              <div>
+                <span>от <strong>120$</strong></span>
+                <span>24 июня 2020, 5 дней</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <h4 class="ml-2 mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi incidunt neque suscipit.</h4>
+              <p class="ml-2 mr-2 mb-0 line-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos. Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            </div>
+            <span class="ml-2"><a href="#">Подробнее</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-outline-warning watch-all" href="#">Смотреть все</a>
+      </div>
+    </div>
+  </section>
+
+  <section id=info>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>9</p>
+          <p>Лет работы</p>
+        </div>
+        <div class="col">
+          <p>62,500</p>
+          <p>Довольных клиентов</p>
+        </div>
+        <div class="col">
+          <p>112</p>
+          <p>Захватывающих туров</p>
+        </div>
+        <div class="col">
+          <p>23</p>
+          <p>Офиса в Беларуси</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h3 class="text-center mb-3">Наш блог</h3>
+      <div class="row">
+        <div class="col-md-6 pb-3">
+          <div>
+            <img src="images/blog_1.jpg" alt="blog_1">
+            <div class="abs-pos">
+              <h5 class="h-100">10 мест на Земле, который должен посетить каждый</h5>
+              <p>20 октября 2018</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-3">
+          <div>
+            <div class="blog-image-part">
+              <img src="images/blog_2.jpg" alt="blog_2">
+            </div>
+            <h5 class="ml-2 mt-1">Как стать успешным тревел-блогером</h5>
+            <p class="ml-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, ut, laborum velit perspiciatis recusandae odio asperiores vel, provident quo non culpa dignissimos. Sapiente at quaerat consectetur fugiat, atque officia.</p>
+            <div class="ml-2 footnote">
+              <p>28 октября 2018</p>
+              <a href="#" class="comment">208</a>
+              <div class="like">
+                <a class="fas fa-heart" onclick="like(this)"></a>
+                <span>21</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-3">
+          <div>
+            <div class="blog-image-part">
+              <img src="images/blog_3.jpg" alt="blog_3">
+            </div>
+            <h5 class="ml-2 mt-1">Лайфхаки успешного путешествия по Норвегии</h5>
+            <p class="ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, perferendis.</p>
+            <div class="ml-2 footnote">
+              <p>12 декабря 2018</p>
+              <a href="#" class="comment">142</a>
+              <div class="like">
+                <a class="fas fa-heart" onclick="like(this)"></a>
+                <span>24</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <a class="btn btn-outline-warning watch-all" href="">Смотреть все</a>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container">
+      <h3 class="text-center mb-3">Отзывы наших клиентов</h3>
+
+      <div id="carousel" class="carousel slide d-flex flex-column" data-ride="carousel">
+        <div class="carousel-inner h-95">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, amet velit? Sit voluptatem, suscipit atque autem reprehenderit, impedit mollitia accusantium, ex odio natus aut. Explicabo!</p>
+              <p class="text-orange">Alice</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+            <div class="carousel-caption d-flex flex-column">
+              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+              <p class="clampjs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, repellendus.</p>
+              <p class="text-orange">Bob</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <div><img src="images/sampleImage.jpg" alt="img_1"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora, placeat sint et rerum facere corrupti mollitia nam nesciunt vero praesentium nulla suscipit impedit laborum doloremque, illum minus quam voluptates distinctio. Expedita, placeat.</p>
+              <p class="text-orange">Charlie</p>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators h-5">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </div>
+    
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div>
+            <p class="d-inline text-orange">E-mail</p>
+            <a href="mailto:wildvacation@gmail.com">wildvacation@gmail.com</a>
+          </div>
+          <div>
+            <p class="d-inline text-orange">Адрес</p>
+            <p class="d-inline">Немига 5а, офис 18, Минск</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5">
+          <div class="d-flex">
+            <div>
+              <p class="text-orange">Телефоны</p>
+            </div>
+            <div>
+              <p>+375 33 888-44-22<br>
+                 +375 29 963-85-21</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div>
+            <p class="text-orange">Мы в соцсетях</p>
+            <div>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-vk"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-facebook"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function like(x){
+      if(x.style.color != "orange"){
+      x.style.color = "orange";
+      let y = x.parentElement.querySelector('span');
+      y.innerHTML = +y.innerHTML + 1;}
+    }
+  </script>
+</body>
+</html>
