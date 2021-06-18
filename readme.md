@@ -1,1 +1,1 @@
-https://4ebula.github.io/projects/
+A task for entering MyFreedom Courses
